@@ -203,9 +203,11 @@ $ git push origin mybranch
 
 
 ## その他　チップス、参考リンク
-- 配布しているラズパイOSのイメージ(buster)ではVScodeがそのままapt installでは入らないため、個別で[ダウンロード](https://update.code.visualstudio.com/1. ... mhf/stable)してからインストールする。
+- 配布しているラズパイOSのイメージ(buster)ではVScodeがそのままapt installでは入らないため、個別でダウンロードしてからインストールする。
+ダウンロードリンク：https://update.code.visualstudio.com/1. ... mhf/stable
+
 ~~~
 $ dpkg -i code_1.85.2-1705559800_armhf.deb
 ~~~
-なお、RPi3A+ではVScodeが重いため、Thonnyを利用するのもありだが、Thonnyでは仮想環境の設定等忘れずに実施しないとpipで入っているライブラリが読み込めない。仮想環境はpyenvで作成したものを使う。
+なお、RPi3A+ではVScodeが重いため、Thonnyを利用するのもありだが、Thonnyでは仮想環境の設定等忘れずに実施しないとpipで入っているライブラリが読み込めないので注意。
  
