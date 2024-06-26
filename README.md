@@ -64,6 +64,13 @@ git --version
 
 windowsでは、下記のようにgit bashがインストールされていればOKです。以降ではまずgit bashを使っていきます。
 ![alt text](image-9.png)
+
+### 👌Gitの設定
+~~~shell
+git config --global user.name "あなたのユーザーネーム"
+git config --global user.email "あなたのメールアドレス"
+~~~
+
 ### 👌Gitの理解
 #### 単語集
 
@@ -151,6 +158,9 @@ $ git commit -m "好きなコメント"
 $ git log  
 $ git checkout <コミット名>
 ~~~
+過去、git checkoutでしたが、現在ではgit switchをぶ使うことになっています。
+git checkoutを使うと下記のようになります。
+
 ![alt text](image-15.png)
     
     ＊日本語  
@@ -169,6 +179,9 @@ $ git checkout <コミット名>
 ~~~  
 $ git pull origin main
 ~~~
+
+pullする時にユーザー名とパスワードが求められますが、パスワードは
+
 6. マージ：
 プルで取得した最新の変更を自分のブランチに統合します：
 ~~~  
@@ -191,7 +204,7 @@ $ git push origin mybranch
 
 
 
-### 🤪簡易にバージョン管理をやる場合。
+### 🤪簡易にバージョン管理をやる場合
 ![alt text](image-19.png)
 
 <br><br><br>
