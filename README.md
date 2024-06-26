@@ -19,7 +19,8 @@
 
 ## 0. Googleアカウントを作成しGmailアドレス(個人開発用)を取得
 
-### 💡 できれば事前に実施ください
+> [!IMPORTANT]
+> できれば事前に実施ください
 
  1. [リンク](https://support.google.com/accounts/answer/27441?hl=ja)を参考にGoogleアカウントを作成し、Gmailアドレス事前に作成してください。  
 GmailアドレスはGit, Githubで使います。  
@@ -27,34 +28,35 @@ GmailアドレスはGit, Githubで使います。
 
 ## 1. Python基礎
 
-　[資料]()をベースに実施予定
+　[資料](https://github.com/autonomous-minicar-battle/development/tree/main/python-tutorial)をベースに実施
 
 ## 2. GoogleColabの使い方
+> TODO:追加
+　[資料]()をベースに実施
 
 ## 3. Github・Gitの導入
 
 ### 📄概要
 
-- **Git**: プログラムの変更履歴を管理するツールで、複数の人が同時に作業する際に便利です。各開発者は自分のコンピュータに完全なコピーを持ち、オフラインでも作業できます。
+- **Git**: プログラムの**変更履歴を管理**するツールで、**複数の人が同時に作業**する際に便利です。各開発者は自分のコンピュータに完全なコピーを持ち、オフラインでも作業できます。
 
-- **GitHub**: Git リポジトリをインターネット上で共有し、協力してソフトウェアを開発できるプラットフォームです。プロジェクトのトラッキング、問題管理、コードレビュー、そして他の開発者とのコラボレーションが容易になります。
-  
-    👇  
-    Gitはコードの管理をするツールでGithubはGitの機能を使い、  
-    ネット上でみんなで共同同時作業ができます。  
-    今回の自動運転ミニカーバトルでは、基本となるコードをGithubで配布します。  
-    皆さんの手元のPCかマシン上でGitを使って、日々のコード管理を実施できるとよいと思います。
+- **GitHub**: Git リポジトリをインターネット上で共有し、**協力してソフトウェアを開発できるプラットフォーム**です。プロジェクトのトラッキング、問題管理、コードレビュー、そして他の開発者とのコラボレーションが容易になります。
+
+> [!NOTE]
+> Gitはコードの管理をするツールでGithubはGitの機能を使い、ネット上でみんなで共同同時作業ができます。  
+> 今回の自動運転ミニカーバトルでは、基本となるコードをGithubで配布します。  
+> 皆さんの手元のPCかマシン上でGitを使って、日々のコード管理を実施できるとよいと思います。
 
 ### ⬇インストール、利用準備
 
-### 💡 できれば事前に実施ください
+> [!IMPORTANT]
+> できれば事前に実施ください
 
 - [Gitのインストール](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) 　
 ここでは、Windows PCでのインストールを紹介します。  
 <http://git-scm.com/download/win> にアクセスすると、ダウンロードが始まります。  
-
-    👇  
-    配布マシン（ラズパイ）にはデフォルトで入ってます。
+> [!NOTE]
+> 配布マシン（ラズパイ）にはデフォルトで入ってます。
 
 - Githubのアカウント作成
     <https://github.com/>　からアクセスし、アカウントを作成する
@@ -72,17 +74,7 @@ git --version
 ![alt text](images/image-1.png)
 
 windowsでは、下記のようにgit bashがインストールされていればOKです。以降ではまずgit bashを使っていきます。
-<<<<<<< HEAD
-![alt text](image-9.png)
-
-### 👌Gitの設定
-~~~shell
-git config --global user.name "あなたのユーザーネーム"
-git config --global user.email "あなたのメールアドレス"
-~~~
-=======
 ![alt text](images/image-9.png)
->>>>>>> 4b2005626add6302e9dfe69cb9e0eafce11b321c
 
 ### 👌Gitの理解
 
@@ -107,8 +99,10 @@ git config --global user.email "あなたのメールアドレス"
 | -        | コンフリクト (Conflict)         | 異なる箇所で同時に変更が加えられており、Gitが自動で解決できない状態。      | -                                               |
 | -        | ブランチのマージ (Branch Merge) | 異なるブランチの変更を統合する操作。                                       | -                                               |
 
-一旦変更を置いておくgit stashは今回利用しません。  
-また、コンフリクトの解消等につきましては、時間の都合割愛します。
+> [!NOTE]
+> 一旦変更を置いておくgit stashは今回利用しません。  
+> また、コンフリクトの解消等につきましては、今回個人のリモートリポをベースにしているため、時間の都合割愛します。
+
 
 ### イメージ
 
@@ -121,8 +115,7 @@ git config --global user.email "あなたのメールアドレス"
 今回は自動運転ミニカーバトル内のtestリポをフォークします。
 ![alt text](images/image-6.png)
 名前を付けて自分のリポに追加します。
-![alt text](images/image-7.png)
-
+![alt text](images/image-7.png)  
 フォークが完了すると下記のように自分のリポ内にフォークしてきたリポが出来上がります。
 ![alt text](images/image-8.png)
 
@@ -180,17 +173,9 @@ git commit -m "好きなコメント"
 git log  
 git checkout <コミット名>
 ~~~
-<<<<<<< HEAD
-過去、git checkoutでしたが、現在ではgit switchをぶ使うことになっています。
-git checkoutを使うと下記のようになります。
-
-![alt text](image-15.png)
-    
-=======
 
 ![alt text](images/image-15.png)
 
->>>>>>> 4b2005626add6302e9dfe69cb9e0eafce11b321c
     ＊日本語  
     > $ git checkout  1f53f82419b68be6f6600991b561c149a889cfd3  
     注意: '1f53f82419b68be6f6600991b561c149a889cfd3' に切り替えています。  
@@ -209,11 +194,8 @@ git checkoutを使うと下記のようになります。
 git pull origin main
 ~~~
 
-<<<<<<< HEAD
 pullする時にユーザー名とパスワードが求められますが、パスワードは
 
-=======
->>>>>>> 4b2005626add6302e9dfe69cb9e0eafce11b321c
 6. マージ：
 プルで取得した最新の変更を自分のブランチに統合します：
 
@@ -238,35 +220,57 @@ $ git push origin mybranch
 - マージ：
 プルリクエストが承認された場合、フォーク元のリポジトリに変更内容がマージされます。
 
-### 🤪簡易にバージョン管理をやる場合
-
-<<<<<<< HEAD
 
 ### 🤪簡易にバージョン管理をやる場合
-![alt text](image-19.png)
-=======
 ![alt text](images/image-19.png)
->>>>>>> 4b2005626add6302e9dfe69cb9e0eafce11b321c
 
 <br><br><br>
 
 ## 4. Visual Studio Codeの紹介
 
 ### インストール
-
-### 💡 できれば事前に実施ください
+> [!IMPORTANT]
+> できれば事前に実施ください
 
  1. [リンク](https://code.visualstudio.com/download)から、自分のPCにあったものをインストール。
 ![alt text](images/image-18.png)
 
 ### 使い方紹介
+#### 画面紹介
+VSCodeを開きましたら下記のような画面になります。
+![alt text](images/vscode_main.png)
 
-- Git等の実行が可能
-- リモートホスト接続（マシンとの接続）
+1. ファイルやフォルダを開く：オレンジ  
+2. ターミナル（黒い画面を開く）：緑  
+PCで利用可能なターミナル（pwsh, git bash等）が使えます。  
+複数シェルを開くことや分割することが可能です。：オレンジ  
+**code xx.txt** と打つとxx.txtでvscodeの編集画面になります。  
+![alt text](images/vscode_shell.png)
 
-- 楽々コーディング♪　Github copilot extension
+    
+3. 拡張機能(Extentions)を追加設定する：青  
+    - Remote - SSH リモートホスト（マシン等）にVScodeからアクセス可能
+        - リモート接続時に無限downloadループにハマった場合は下記のような対策を打つ。
+        -  Remote -SSHの設定>>Extension setting >> Remote.SSH: Use Local Serverをチェック外す。
+        ![alt text](images/RSSH.png)
+        ![alt text](images/RSSH_userlocal.png)
+    - [GitHub Copilot](https://github.com/github/copilot-preview) AIによるコード補完機能で、プログラミング作業を効率化する拡張機能。  
+    - Japanese Language Pack for VS Code 日本語表示
+    - Jupyter Jupyterの実行環境
+    - Markdown Emoji 絵文字をマークダウンで表示
+    - Rainbow CSV カラフルなCSV表示
+    ![alt text](images/RainbowCSV.png)
 
-## 5. 超音波センサマシン2Dシミュレータ on GoogleColab
+4. 超音波センサマシン2Dシミュレータ on GoogleColab
+シミュレータ（GoogleColabでご自身のアカウントで実行ください。）:　https://drive.google.com/file/d/1jYOI6e1hpRkT1DzkBo1Uv3JkmMsE3tv9/view?usp=sharing  
+下記から開いてください。
+
+![alt text](images/simu_GC.png)
+ 
+
+練習用コース図
+![alt text](images/image-20.png)
+
 
 ## その他　チップス、参考リンク
 
