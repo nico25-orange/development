@@ -280,7 +280,7 @@ PCで利用可能なターミナル（pwsh, git bash等）が使えます。
 ![alt text](images/simu_GC.png)
 
 練習用コース図
-![alt text](images/image-20.png)
+![alt text](images/course_demae_2024.png)
 
 ## その他　チップス、参考リンク
 
@@ -292,3 +292,5 @@ dpkg -i code_1.85.2-1705559800_armhf.deb
 ~~~
 
 なお、RPi3A+ではVScodeが重いため、Thonnyを利用するのもありだが、Thonnyでは仮想環境の設定等忘れずに実施しないとpipで入っているライブラリが読み込めないので注意。
+
+
