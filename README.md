@@ -28,9 +28,17 @@ GmailアドレスはGit, Githubで使います。
 
 ## 1. Python基礎
 
+> [!IMPORTANT]
+> できれば事前に下記手順でPythonをインストールしてください。インストール済の方は不要です。  
+> Windowsの方: [ダウンロード](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe)  
+> macOSの方: プリインストールされているので、お好みで[最新のバージョン]  (<https://www.python.org/ftp/python/3.12.4/python-3.12.4-macos11.pkg)をインストールしてください>
+
 　[資料](https://github.com/autonomous-minicar-battle/development/tree/main/python-tutorial)をベースに実施
+  
+  [スライド作成中](https://docs.google.com/presentation/d/1F7GPWbKjGgxZ7P9o8JcxjqQml8upp7D9xlvwcdI3fBw/edit?usp=sharing)
 
 ## 2. GoogleColabの使い方
+
 > TODO:追加
 　[資料]()をベースに実施
 
@@ -55,6 +63,7 @@ GmailアドレスはGit, Githubで使います。
 - [Gitのインストール](https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-Git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) 　
 ここでは、Windows PCでのインストールを紹介します。  
 <http://git-scm.com/download/win> にアクセスすると、ダウンロードが始まります。  
+
 > [!NOTE]
 > 配布マシン（ラズパイ）にはデフォルトで入ってます。
 
@@ -102,7 +111,6 @@ windowsでは、下記のようにgit bashがインストールされていれ�
 > [!NOTE]
 > 一旦変更を置いておくgit stashは今回利用しません。  
 > また、コンフリクトの解消等につきましては、今回個人のリモートリポをベースにしているため、時間の都合割愛します。
-
 
 ### イメージ
 
@@ -220,8 +228,8 @@ $ git push origin mybranch
 - マージ：
 プルリクエストが承認された場合、フォーク元のリポジトリに変更内容がマージされます。
 
-
 ### 🤪簡易にバージョン管理をやる場合
+
 ![alt text](images/image-19.png)
 
 <br><br><br>
@@ -229,6 +237,7 @@ $ git push origin mybranch
 ## 4. Visual Studio Codeの紹介
 
 ### インストール
+>
 > [!IMPORTANT]
 > できれば事前に実施ください
 
@@ -236,7 +245,9 @@ $ git push origin mybranch
 ![alt text](images/image-18.png)
 
 ### 使い方紹介
+
 #### 画面紹介
+
 VSCodeを開きましたら下記のような画面になります。
 ![alt text](images/vscode_main.png)
 
@@ -247,11 +258,10 @@ PCで利用可能なターミナル（pwsh, git bash等）が使えます。
 **code xx.txt** と打つとxx.txtでvscodeの編集画面になります。  
 ![alt text](images/vscode_shell.png)
 
-    
 3. 拡張機能(Extentions)を追加設定する：青  
     - Remote - SSH リモートホスト（マシン等）にVScodeからアクセス可能
         - リモート接続時に無限downloadループにハマった場合は下記のような対策を打つ。
-        -  Remote -SSHの設定>>Extension setting >> Remote.SSH: Use Local Serverをチェック外す。
+        - Remote -SSHの設定>>Extension setting >> Remote.SSH: Use Local Serverをチェック外す。
         ![alt text](images/RSSH.png)
         ![alt text](images/RSSH_userlocal.png)
     - [GitHub Copilot](https://github.com/github/copilot-preview) AIによるコード補完機能で、プログラミング作業を効率化する拡張機能。  
@@ -262,15 +272,13 @@ PCで利用可能なターミナル（pwsh, git bash等）が使えます。
     ![alt text](images/RainbowCSV.png)
 
 4. 超音波センサマシン2Dシミュレータ on GoogleColab
-シミュレータ（GoogleColabでご自身のアカウントで実行ください。）:　https://drive.google.com/file/d/1jYOI6e1hpRkT1DzkBo1Uv3JkmMsE3tv9/view?usp=sharing  
+シミュレータ（GoogleColabでご自身のアカウントで実行ください。）:　<https://drive.google.com/file/d/1jYOI6e1hpRkT1DzkBo1Uv3JkmMsE3tv9/view?usp=sharing>  
 下記から開いてください。
 
 ![alt text](images/simu_GC.png)
- 
 
 練習用コース図
 ![alt text](images/image-20.png)
-
 
 ## その他　チップス、参考リンク
 
