@@ -42,7 +42,7 @@ GmailアドレスはGit, Githubで使います。
 > TODO:追加
 　[資料]()をベースに実施
 
-## 3. Github・Gitの導入
+## 3. Git・Githubの導入
 
 ### 📄概要
 
@@ -70,7 +70,7 @@ GmailアドレスはGit, Githubで使います。
 - Githubのアカウント作成
     <https://github.com/>　からアクセスし、アカウントを作成する
     必要なもの: ユーザー名、メールアドレス（上記のGmailを使いましょう）、パスワード  
-    [手順参考参考](https://qiita.com/rshibasa/items/f62db870ed573ca4dced)
+    [手順参考](https://qiita.com/rshibasa/items/f62db870ed573ca4dced)
 
 ### ✅Gitの確認
 
@@ -82,7 +82,9 @@ git --version
 
 ![alt text](images/image-1.png)
 
-windowsでは、下記のようにgit bashがインストールされていればOKです。以降ではまずgit bashを使っていきます。
+windowsでは、下記のようにgit bashがインストールされていればOKです。　　
+以降ではまずgit bashを使っていきます。
+
 ![alt text](images/image-9.png)
 
 ### 👌Gitの理解
@@ -114,7 +116,7 @@ windowsでは、下記のようにgit bashがインストールされていれ�
 
 ### イメージ
 
-![alt text](images/image-17.png)
+![alt text](images/process.png)
 
 #### 一連の流れの練習
 
@@ -230,7 +232,7 @@ $ git push origin mybranch
 
 ### 🤪簡易にバージョン管理をやる場合
 
-![alt text](images/image-19.png)
+![alt text](images/prcess_local.png)
 
 <br><br><br>
 
