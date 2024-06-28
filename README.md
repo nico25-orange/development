@@ -273,7 +273,7 @@ PCで利用可能なターミナル（pwsh, git bash等）が使えます。
     - Rainbow CSV カラフルなCSV表示
     ![alt text](images/RainbowCSV.png)
 
-4. 超音波センサマシン2Dシミュレータ on GoogleColab
+## 超音波センサマシン2Dシミュレータ on GoogleColab
 シミュレータ（GoogleColabでご自身のアカウントで実行ください。）:　<https://drive.google.com/file/d/1jYOI6e1hpRkT1DzkBo1Uv3JkmMsE3tv9/view?usp=sharing>  
 下記から開いてください。
 
