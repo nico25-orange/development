@@ -31,7 +31,7 @@ GmailアドレスはGit, Githubで使います。
 > [!IMPORTANT]
 > できれば事前に下記手順でPythonをインストールしてください。インストール済の方は不要です。  
 > Windowsの方: [ダウンロード](https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe)  
-> macOSの方: プリインストールされているので、お好みで[最新のバージョン]  (https://www.python.org/ftp/python/3.12.4/python-3.12.4-macos11.pkg)をインストールしてください
+> macOSの方: プリインストールされているので、お好みで[最新のバージョン](https://www.python.org/ftp/python/3.12.4/python-3.12.4-macos11.pkg)をインストールしてください
 
 　[資料](https://github.com/autonomous-minicar-battle/development/tree/main/python-tutorial)をベースに実施
   
